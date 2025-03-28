@@ -235,7 +235,7 @@ resource "aws_cloudformation_stack" "autoscaling_group" {
   depends_on = [
     time_sleep.wait_30_seconds
   ]
-  name          = "eks-cluster-stack"
+  name          = "prod-eks-stack"
   template_body = <<EOF
 Description: "Node autoscaler"
 Resources:
